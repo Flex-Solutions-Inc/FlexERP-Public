@@ -1,3 +1,14 @@
+function toggleCategory(categoryId) {
+    var element = document.getElementById(categoryId);
+    if (element.classList.contains('hidden')) {
+        element.classList.remove('hidden');
+        element.classList.add('show');
+    } else {
+        element.classList.remove('show');
+        element.classList.add('hidden');
+    }
+}
+
 function showDetail(endpoint) {
     const details = {
         'getAllProducts': `
