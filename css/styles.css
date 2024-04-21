@@ -64,6 +64,50 @@ body, html {
 .content:hover {
     background: #202020;
 }
+.category {
+    margin-bottom: 20px;
+}
+
+.category-title {
+    padding: 10px;
+    background-color: #444;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.category-title:hover {
+    background-color: #555;
+}
+
+.sidebar-list {
+    list-style-type: none;
+    padding: 0;
+    display: none; /* Start hidden */
+    margin-top: 10px;
+}
+
+.sidebar-list li {
+    padding: 8px 20px;
+    background-color: #333;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.sidebar-list li:hover {
+    background-color: #444;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
 
 #api-details h2, #api-details h3 {
     color: #aad3e6;
