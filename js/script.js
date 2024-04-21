@@ -296,16 +296,29 @@ function showDetail(endpoint) {
   }
 }</pre>
         `,
-        'postApiResource': `
-            <h2>POST /api/resource</h2>
+        'postCreateAProduct': `
+            <h2>POST /company/{company_id}/v1/api/products</h2>
             <h3>Description</h3>
-            <p>Create a new resource.</p>
+            <p>Creates a Product. Only one product can be created at a time.</p>
             <h3>Request URL</h3>
-            <code>https://example.com/api/resource</code>
+            <code>https://www.getflex.solutions/company/{company_id}/v1/api/products</code>
+            <h3>Required Fields</h3>
+                <li><code>'name'</code></li>
+                <li><code>'type'</code></li>
+                <li><code>'weight' - Using LBs</code></li>
+                <li><code>'price'</code></li>
+            <h3>Limits</h3>
+            <li><code>
+            Product name length can not exceed 250 characters.
+            </code></li>
             <h3>Body Parameters</h3>
             <pre>{
-    "name": "New Resource",
-    "description": "Description of the new resource"
+    "name": "New Product",
+    "description": "Description of the new product"
+    "type": "Your Product Type"
+    "weight": "1.34"
+    "price": "13.99"
+    "quantity": "138"
 }</pre>
         `,
         'updateApiResource': `
