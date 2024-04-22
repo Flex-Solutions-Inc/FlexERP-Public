@@ -11,17 +11,47 @@
         <div id="sidebar" class="sidebar">
             <h1 class="sidebar-title">Flex ERP API</h1>
             <div class="category">
-                <div class="category-title" onclick="toggleCategory('productOps')">Product Operations</div>
+                <div class="category-title" onclick="toggleCategory('Products')">Products</div>
                 <ul class="sidebar-list hidden" id="productOps">
-                    <li onclick="showDetail('getAllProducts')">GET All Products</li>
-                    <li onclick="showDetail('postCreateAProduct')">POST Create A Product</li>
+                    <li onclick="showDetail('getAllProducts')">Get All Products</li>
+                    <li onclick="showDetail('postCreateAProduct')">Create A Product</li>
+                    <li onclick="showDetail('postCreateAProduct')">Delete Products</li>
+                    <li onclick="showDetail('postCreateAProduct')">Get a Product</li>
+                    <li onclick="showDetail('postCreateAProduct')">Update a Product</li>
+                    <li onclick="showDetail('postCreateAProduct')">Delete a Product</li>
                 </ul>
             </div>
             <div class="category">
-                <div class="category-title" onclick="toggleCategory('resourceOps')">Resource Operations</div>
+                <div class="category-title" onclick="toggleCategory('Brands')">Brands</div>
                 <ul class="sidebar-list hidden" id="resourceOps">
-                    <li onclick="showDetail('updateApiResource')">UPDATE /api/resource</li>
-                    <li onclick="showDetail('deleteApiResource')">DELETE /api/resource</li>
+                    <li onclick="showDetail('updateApiResource')">Get All Brands</li>
+                    <li onclick="showDetail('deleteApiResource')">Create a Brand</li>
+                    <li onclick="showDetail('deleteApiResource')">Delete Brands</li>
+                    <li onclick="showDetail('deleteApiResource')">Get a Brand</li>
+                    <li onclick="showDetail('deleteApiResource')">Update a Brand</li>
+                    <li onclick="showDetail('deleteApiResource')">Delete a Brand</li>
+                </ul>
+            </div>
+            <div class="category">
+                <div class="category-title" onclick="toggleCategory('Categories')">Categories</div>
+                <ul class="sidebar-list hidden" id="resourceOps">
+                    <li onclick="showDetail('updateApiResource')">Get All Categories</li>
+                    <li onclick="showDetail('deleteApiResource')">Create a Category</li>
+                    <li onclick="showDetail('deleteApiResource')">Delete Categories</li>
+                    <li onclick="showDetail('deleteApiResource')">Get a Category</li>
+                    <li onclick="showDetail('deleteApiResource')">Update a Category</li>
+                    <li onclick="showDetail('deleteApiResource')">Delete a Category</li>
+                </ul>
+            </div>
+            <div class="category">
+                <div class="category-title" onclick="toggleCategory('Categories')">Suppliers</div>
+                <ul class="sidebar-list hidden" id="resourceOps">
+                    <li onclick="showDetail('updateApiResource')">Get All Suppliers</li>
+                    <li onclick="showDetail('deleteApiResource')">Create a Category</li>
+                    <li onclick="showDetail('deleteApiResource')">Delete Categories</li>
+                    <li onclick="showDetail('deleteApiResource')">Get a Category</li>
+                    <li onclick="showDetail('deleteApiResource')">Update a Category</li>
+                    <li onclick="showDetail('deleteApiResource')">Delete a Category</li>
                 </ul>
             </div>
         </div>
