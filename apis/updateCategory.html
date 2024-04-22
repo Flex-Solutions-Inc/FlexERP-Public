@@ -1,0 +1,18 @@
+<h2>PUT /company/{company_id}/v1/api/categories/{category_id}</h2>
+    <h3>Description</h3>
+    <p>Update existing category information by providing the company ID and category ID along with new data for the category.</p>
+    <h3>Request URL</h3>
+    <code>https://getflex.solutions/company/{company_id}/v1/api/categories/{category_id}</code>
+    <h3>Request Body Example</h3>
+    <pre>
+{
+    "name": "Updated Electronics",
+    "description": "Updated description of electronic devices",
+    "parent_category_id": null,
+    "is_main": true,
+    "thumbnail_image": "path/to/updated_image.jpg",
+    "active": true
+}
+    </pre>
+    <h3>Sample Response</h3>
+    <pre>Response: {"message": "Category updated successfully"}</pre>
