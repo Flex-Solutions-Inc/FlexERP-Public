@@ -56,11 +56,29 @@
             </div>
         </div>
         <div id="content" class="content">
-            <h1>Welcome to the official Flex ERP API Documentation</h1>
-            <div id="api-details">
-                <p>Select an endpoint from the left sidebar to view more details.</p>
-            </div>
+        <header class="content-header">
+            <h1>Welcome to the Official Flex ERP API Documentation</h1>
+            <p>Explore detailed documentation for all API endpoints, including request formats, example calls, and response data.</p>
+        </header>
+
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search endpoints..." onkeyup="filterEndpoints()">
+            <button onclick="clearSearch()">Clear</button>
         </div>
+
+        <nav class="table-of-contents">
+            <h2>Table of Contents</h2>
+            <ul id="toc-list">
+                <li><a href="#getAllProducts">GET All Products</a></li>
+                <li><a href="#postCreateAProduct">POST Create A Product</a></li>
+                <li><a href="#updateApiResource">UPDATE /api/resource</a></li>
+                <li><a href="#deleteApiResource">DELETE /api/resource</a></li>
+            </ul>
+        </nav>
+        <section id="api-details" class="api-details">
+        <p>Select an endpoint from the left sidebar or the table of contents to view more details.</p>
+        </section>
+    </div>
     </div>
     <script src="js/script.js"></script>
 </body>
