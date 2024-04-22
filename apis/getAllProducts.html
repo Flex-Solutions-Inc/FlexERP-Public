@@ -1,6 +1,34 @@
-<h2>DELETE /api/resource/{id}</h2>
-<h3>Description</h3>
-<p>Delete an existing resource. You must specify the resource ID in the URL path.</p>
-<h3>Request URL</h3>
-<code>https://example.com/api/resource/123</code>
-<pre>Response: Resource with ID 123 has been deleted.</pre>
+<h2>GET /company/{company_id}/v1/api/products</h2>
+    <h3>Description</h3>
+    <p>Retrieve a list of all products for a specified company. The company ID must be provided in the URL path to fetch the related products.</p>
+    <h3>Request URL</h3>
+    <code>https://getflex.solutions/company/{company_id}/v1/api/products</code>
+    <h3>Example Request</h3>
+    <code>https://getflex.solutions/company/12345/v1/api/products</code>
+    <h3>Sample Response</h3>
+    <pre>
+{
+    "products": [
+        {
+            "item_id": "001",
+            "company_id": "12345",
+            "sku": "SKU001",
+            "name": "Product 1",
+            "description": "Description of Product 1",
+            "price": 100.00,
+            "cost": 50.00,
+            "quantity_available": 20,
+            "reorder_level": 5,
+            "category_id": "C001",
+            "location_id": "L001",
+            "supplier_id": "S001",
+            "barcode": "B001",
+            "expiration_date": "2023-12-31",
+            "status": "Available",
+            "serial_number": "SN001",
+            "weight": 1.5,
+            "dimensions": "10x5x2"
+        }
+    ]
+}
+    </pre>
