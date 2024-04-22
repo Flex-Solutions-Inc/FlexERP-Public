@@ -49,12 +49,11 @@
                     </svg>
                     Categories</div>
                 <ul class="sidebar-list hidden" id="Categories">
-                    <li onclick="showDetail('updateApiResource')">Get All Categories</li>
-                    <li onclick="showDetail('deleteApiResource')">Create a Category</li>
-                    <li onclick="showDetail('deleteApiResource')">Delete Categories</li>
-                    <li onclick="showDetail('deleteApiResource')">Get a Category</li>
-                    <li onclick="showDetail('deleteApiResource')">Update a Category</li>
-                    <li onclick="showDetail('deleteApiResource')">Delete a Category</li>
+                    <li class="get" onclick="showDetail('getAllCategories')">Get All Categories</li>
+                    <li class="post" onclick="showDetail('createCategory')">Create a Category</li>
+                    <li class="get" onclick="showDetail('getCategory')">Get a Category</li>
+                    <li class="put" onclick="showDetail('updateCategory')">Update a Category</li>
+                    <li class="delete" onclick="showDetail('deleteCategory')">Delete a Category</li>
                 </ul>
             </div>
             <div class="category">
