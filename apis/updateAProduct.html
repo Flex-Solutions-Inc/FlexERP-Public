@@ -1,0 +1,32 @@
+<h2>PUT /company/{company_id}/v1/api/products/{product_id}</h2>
+    <h3>Description</h3>
+    <p>Update an existing product's details within a specified company by providing the full product details in the JSON body request.</p>
+    <h3>Request URL</h3>
+    <code>https://getflex.solutions/company/{company_id}/v1/api/products/{product_id}</code>
+    <h3>Example Request</h3>
+    <code>https://getflex.solutions/company/12345/v1/api/products/001</code>
+    <h3>Request Body Example</h3>
+    <pre>
+{
+    "sku": "SKU001",
+    "name": "Updated Product 1",
+    "description": "Updated description of Product 1",
+    "price": 110.00,
+    "cost": 55.00,
+    "quantity_available": 25,
+    "reorder_level": 10,
+    "category_id": "C001",
+    "location_id": "L001",
+    "supplier_id": "S001",
+    "barcode": "B001",
+    "expiration_date": "2023-12-31",
+    "status": "Available",
+    "serial_number": "SN001",
+    "weight": 1.5,
+    "dimensions": "10x5x2",
+    "custom_fields": "Updated extra details",
+    "updated_by": "admin"
+}
+    </pre>
+    <h3>Sample Response</h3>
+    <pre>Response: Product successfully updated</pre>
