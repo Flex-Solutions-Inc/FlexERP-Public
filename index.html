@@ -13,12 +13,12 @@
             <div class="category">
                 <div class="category-title" onclick="toggleCategory('Products')">Products</div>
                 <ul class="sidebar-list hidden" id="Products">
-                    <li onclick="showDetail('getAllProducts')">Get All Products</li>
-                    <li onclick="showDetail('postCreateAProduct')">Create A Product</li>
-                    <li onclick="showDetail('postCreateAProduct')">Delete Products</li>
-                    <li onclick="showDetail('postCreateAProduct')">Get a Product</li>
-                    <li onclick="showDetail('postCreateAProduct')">Update a Product</li>
-                    <li onclick="showDetail('postCreateAProduct')">Delete a Product</li>
+                    <li class="get" onclick="showDetail('getAllProducts')">Get All Products</li>
+                    <li class="post" onclick="showDetail('postCreateAProduct')">Create A Product</li>
+                    <li class="delete" onclick="showDetail('postCreateAProduct')">Delete Products</li>
+                    <li class="get" onclick="showDetail('postCreateAProduct')">Get a Product</li>
+                    <li class="put" onclick="showDetail('postCreateAProduct')">Update a Product</li>
+                    <li class="delete" onclick="showDetail('postCreateAProduct')">Delete a Product</li>
                 </ul>
             </div>
             <div class="category">
