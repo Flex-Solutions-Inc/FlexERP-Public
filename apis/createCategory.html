@@ -1,0 +1,18 @@
+<h2>POST /company/{company_id}/v1/api/categories</h2>
+    <h3>Description</h3>
+    <p>Create a new category within a company. Provide category details including name, description, and whether it's a main category.</p>
+    <h3>Request URL</h3>
+    <code>https://getflex.solutions/company/{company_id}/v1/api/categories</code>
+    <h3>Request Body Example</h3>
+    <pre>
+{
+    "name": "Smartphones",
+    "description": "Collection of smartphones",
+    "parent_category_id": 1,
+    "is_main": false,
+    "thumbnail_image": "path/to/smartphone.jpg",
+    "active": true
+}
+    </pre>
+    <h3>Sample Response</h3>
+    <pre>Response: {"message": "Category created successfully", "category_id": 3}</pre>
