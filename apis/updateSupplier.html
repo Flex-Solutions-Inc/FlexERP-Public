@@ -1,0 +1,19 @@
+<h2>PUT /company/{company_id}/v1/api/suppliers/{supplier_id}</h2>
+    <h3>Description</h3>
+    <p>Update existing supplier information by providing the company ID and supplier ID along with new data for the supplier.</p>
+    <h3>Request URL</h3>
+    <code>https://getflex.solutions/company/{company_id}/v1/api/suppliers/{supplier_id}</code>
+    <h3>Request Body Example</h3>
+    <pre>
+{
+    "name": "Updated Supplier One",
+    "contact_name": "Johnathan Doe",
+    "address": "123 Updated Street, City",
+    "phone": "123-456-7890",
+    "email": "updated@supplierone.com",
+    "website": "http://www.updatedsupplierone.com",
+    "status": "active"
+}
+    </pre>
+    <h3>Sample Response</h3>
+    <pre>Response: {"message": "Supplier updated successfully"}</pre>
