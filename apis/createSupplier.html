@@ -1,0 +1,19 @@
+<h2>POST /company/{company_id}/v1/api/suppliers</h2>
+    <h3>Description</h3>
+    <p>Create a new supplier within a company. Provide supplier details including name, contact information, and other relevant data.</p>
+    <h3>Request URL</h3>
+    <code>https://getflex.solutions/company/{company_id}/v1/api/suppliers</code>
+    <h3>Request Body Example</h3>
+    <pre>
+{
+    "name": "Supplier Three",
+    "contact_name": "Alice Smith",
+    "address": "345 Boulevard, City",
+    "phone": "321-654-0987",
+    "email": "contact@supplierthree.com",
+    "website": "http://www.supplierthree.com",
+    "status": "active"
+}
+    </pre>
+    <h3>Sample Response</h3>
+    <pre>Response: {"message": "Supplier created successfully", "supplier_id": 3}</pre>
