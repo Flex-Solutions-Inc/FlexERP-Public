@@ -14,34 +14,26 @@ body, html {
     background: radial-gradient(circle, rgba(58,58,58,1) 0%, rgba(18,18,18,1) 100%);
 }
 
-.get::before, .post::before, .put::before, .delete::before {
-    content: attr(class); /* Displays the class name, which matches HTTP methods */
-    display: inline-block;
-    padding: 2px 8px;
-    font-size: 12px;
-    font-weight: bold;
-    color: #fff;
-    border-radius: 10px;
-    margin-right: 10px;
-    vertical-align: middle;
-    text-transform: uppercase; /* Makes the method names uppercase */
-}
-
 .get::before {
+    content: "GET"; /* Explicit label */
     background-color: #4CAF50; /* Green for GET */
 }
 
 .post::before {
+    content: "POST"; /* Explicit label */
     background-color: #2196F3; /* Blue for POST */
 }
 
 .put::before {
+    content: "PUT"; /* Explicit label */
     background-color: #FFC107; /* Amber for PUT */
 }
 
 .delete::before {
+    content: "DELETE"; /* Explicit label */
     background-color: #F44336; /* Red for DELETE */
 }
+
 
 .sidebar {
     width: 250px;
@@ -69,13 +61,25 @@ body, html {
 }
 
 .sidebar-list li {
-    padding: 12px;
-    margin-bottom: 6px;
-    background: linear-gradient(145deg, #2d2d2d, #252525);
-    list-style: none;
+    display: flex;
+    align-items: center; /* Centers items vertically within the list item */
+    padding: 8px 20px; /* Adjusted padding for better spacing */
+    background-color: #333;
+    border-radius: 3px;
     cursor: pointer;
-    border-radius: 6px;
-    transition: all 0.3s ease;
+    transition: background 0.3s;
+}
+
+.get::before, .post::before, .put::before, .delete::before {
+    padding: 2px 8px;
+    margin-right: 10px; /* Ensures spacing between chip and text */
+    vertical-align: middle;
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 12px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .sidebar-list li:hover, .sidebar-list li:focus {
