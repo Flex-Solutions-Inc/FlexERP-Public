@@ -1,0 +1,23 @@
+<h2>GET /company/{company_id}/v1/api/suppliers/{supplier_id}</h2>
+    <h3>Description</h3>
+    <p>Retrieve details of a specific supplier by providing the company ID and supplier ID.</p>
+    <h3>Request URL</h3>
+    <code>https://getflex.solutions/company/{company_id}/v1/api/suppliers/{supplier_id}</code>
+    <h3>Example Request</h3>
+    <code>https://getflex.solutions/company/123/v1/api/suppliers/1</code>
+    <h3>Sample Response</h3>
+    <pre>
+{
+    "supplier_id": 1,
+    "company_id": "123",
+    "name": "Supplier One",
+    "contact_name": "John Doe",
+    "address": "123 Street, City",
+    "phone": "123-456-7890",
+    "email": "contact@supplierone.com",
+    "website": "http://www.supplierone.com",
+    "status": "active",
+    "created_at": "2021-01-01T00:00:00",
+    "updated_at": "2021-01-02T00:00:00"
+}
+    </pre>
