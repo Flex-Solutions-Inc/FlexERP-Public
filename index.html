@@ -64,12 +64,11 @@
                     </svg>
                     Suppliers</div>
                 <ul class="sidebar-list hidden" id="Suppliers">
-                    <li onclick="showDetail('updateApiResource')">Get All Suppliers</li>
-                    <li onclick="showDetail('deleteApiResource')">Create a Category</li>
-                    <li onclick="showDetail('deleteApiResource')">Delete Categories</li>
-                    <li onclick="showDetail('deleteApiResource')">Get a Category</li>
-                    <li onclick="showDetail('deleteApiResource')">Update a Category</li>
-                    <li onclick="showDetail('deleteApiResource')">Delete a Category</li>
+                    <li class="get" onclick="showDetail('getAllSuppliers')">Get All Suppliers</li>
+                    <li class="post" onclick="showDetail('createSupplier')">Create a Supplier</li>
+                    <li class="get" onclick="showDetail('getSupplier')">Get a Supplier</li>
+                    <li class="put" onclick="showDetail('updateSupplier')">Update a Supplier</li>
+                    <li class="delete" onclick="showDetail('deleteSupplier')">Delete a Supplier</li>
                 </ul>
             </div>
         </div>
