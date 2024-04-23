@@ -1,0 +1,19 @@
+<h2>POST /v1/api/companies/{company_id}/{uuid}/join</h2>
+    <h3>Description</h3>
+    <p>Join an existing company using a company ID and user UUID. Optionally, a company join code can be required.</p>
+    <h3>Request URL</h3>
+    <code>https://getflex.solutions/v1/api/companies/101/UUID123/join</code>
+    <h3>Request Body Example</h3>
+    <pre>
+{
+    "company_code": "ABC123"
+}
+    </pre>
+    <h3>Sample Response</h3>
+    <pre>
+{
+    "message": "User successfully joined the company",
+    "company_id": 101,
+    "uuid": "UUID123"
+}
+    </pre>
