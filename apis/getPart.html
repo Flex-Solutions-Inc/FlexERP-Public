@@ -1,0 +1,16 @@
+ <h2>GET /v1/api/parts/{part_id}</h2>
+    <h3>Description</h3>
+    <p>Retrieve detailed information about a specific part by its ID. Useful for inventory checks and updates.</p>
+    <h3>Request URL</h3>
+    <code>https://getflex.solutions/v1/api/parts/123</code>
+    <h3>Sample Response</h3>
+    <pre>
+{
+    "message": "Part retrieved successfully",
+    "part_id": 123,
+    "part_name": "Hydraulic Pump",
+    "on_hand": 150,
+    "min_stock_level": 50,
+    "price_per_unit": 250.00
+}
+    </pre>
