@@ -1,0 +1,20 @@
+<h2>PUT /company/{company_id}/v1/api/purchase_orders/{purchase_order_id}</h2>
+    <h3>Description</h3>
+    <p>Update details of an existing purchase order. This can include changing the expected delivery date, order status, or the total amount.</p>
+    <h3>Request URL</h3>
+    <code>https://getflex.solutions/company/{company_id}/v1/api/purchase_orders/{purchase_order_id}</code>
+    <h3>Request Body Example</h3>
+    <pre>
+{
+    "expected_delivery_date": "2023-11-01T00:00:00Z",
+    "status": "completed",
+    "total_amount": 2200.00
+}
+    </pre>
+    <h3>Sample Response</h3>
+    <pre>
+{
+    "message": "Purchase order updated successfully",
+    "purchase_order_id": 123
+}
+    </pre>
