@@ -1,0 +1,26 @@
+<h2>GET /company/{company_id}/v1/api/sales_orders</h2>
+    <h3>Description</h3>
+    <p>Retrieve all sales orders associated with a specified company. This endpoint lists all sales orders under the given company ID.</p>
+    <h3>Request URL</h3>
+    <code>https://getflex.solutions/company/{company_id}/v1/api/sales_orders</code>
+    <h3>Example Request</h3>
+    <code>https://getflex.solutions/company/123/v1/api/sales_orders</code>
+    <h3>Sample Response</h3>
+    <pre>
+[
+    {
+        "order_id": 1,
+        "company_id": "123",
+        "customer_id": 10,
+        "order_date": "2021-01-01T00:00:00",
+        "ship_date": "2021-01-05T00:00:00",
+        "status": "pending",
+        "total_amount": 500.00,
+        "currency": "USD",
+        "payment_method": "credit card",
+        "notes": "Urgent delivery",
+        "created_at": "2021-01-01T00:00:00",
+        "updated_at": "2021-01-02T00:00:00"
+    }
+]
+    </pre>
