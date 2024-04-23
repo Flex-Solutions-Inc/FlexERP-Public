@@ -1,0 +1,22 @@
+<h2>PUT /v1/api/parts/{part_id}</h2>
+    <h3>Description</h3>
+    <p>Update existing part details such as stock levels, price, and description. Essential for maintaining accurate inventory records.</p>
+    <h3>Request URL</h3>
+    <code>https://getflex.solutions/v1/api/parts/123</code>
+    <h3>Request Body Example</h3>
+    <pre>
+{
+    "part_name": "Hydraulic Pump",
+    "description": "Updated description for better clarity.",
+    "on_hand": 200,
+    "min_stock_level": 75,
+    "price_per_unit": 300.00
+}
+    </pre>
+    <h3>Sample Response</h3>
+    <pre>
+{
+    "message": "Part updated successfully",
+    "part_id": 123
+}
+    </pre>
