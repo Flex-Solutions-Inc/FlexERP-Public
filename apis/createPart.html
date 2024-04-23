@@ -1,0 +1,26 @@
+<h2>POST /v1/api/parts</h2>
+    <h3>Description</h3>
+    <p>Create a new part in the inventory. This endpoint is used to add parts to the database, specifying details such as name, description, stock levels, and price per unit.</p>
+    <h3>Request URL</h3>
+    <code>https://getflex.solutions/v1/api/parts</code>
+    <h3>Request Body Example</h3>
+    <pre>
+{
+    "part_name": "Hydraulic Pump",
+    "description": "A component used in hydraulic systems",
+    "on_hand": 150,
+    "min_stock_level": 50,
+    "price_per_unit": 250.00
+}
+    </pre>
+    <h3>Sample Response</h3>
+    <pre>
+{
+    "message": "Part created successfully",
+    "part_id": 123,
+    "part_name": "Hydraulic Pump",
+    "on_hand": 150,
+    "min_stock_level": 50,
+    "price_per_unit": 250.00
+}
+    </pre>
