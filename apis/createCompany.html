@@ -1,6 +1,6 @@
 <h2>POST /v1/api/companies</h2>
     <h3>Description</h3>
-    <p>Create a new company. Provide details including the owner's user ID, company name, size, and plan.</p>
+    <p>Create a new company. Provide details including the owner's user ID, company name, size, plan, and a detailed description of the company.</p>
     <h3>Request URL</h3>
     <code>https://getflex.solutions/v1/api/companies</code>
     <h3>Request Body Example</h3>
@@ -9,7 +9,8 @@
     "company_owner_id": 123,
     "company_name": "Example Inc.",
     "company_size": 100,
-    "company_plan": 1
+    "company_plan": 1,
+    "company_description": "A leading provider of innovative tech solutions."
 }
     </pre>
     <h3>Sample Response</h3>
@@ -20,6 +21,7 @@
     "uuid": 123,
     "company_name": "Example Inc.",
     "company_plan": 1,
-    "company_size": 100
+    "company_size": 100,
+    "company_description": "A leading provider of innovative tech solutions."
 }
     </pre>
