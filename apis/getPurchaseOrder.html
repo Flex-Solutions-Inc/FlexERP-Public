@@ -1,0 +1,17 @@
+<h2>GET /company/{company_id}/v1/api/purchase_orders/{purchase_order_id}</h2>
+    <h3>Description</h3>
+    <p>Retrieve detailed information about a specific purchase order within a company by its ID.</p>
+    <h3>Request URL</h3>
+    <code>https://getflex.solutions/company/{company_id}/v1/api/purchase_orders/{purchase_order_id}</code>
+    <h3>Sample Response</h3>
+    <pre>
+{
+    "purchase_order_id": 123,
+    "supplier_id": 100,
+    "company_id": 5,
+    "order_date": "2023-10-01T00:00:00Z",
+    "expected_delivery_date": "2023-10-15T00:00:00Z",
+    "status": "pending",
+    "total_amount": 2000.50
+}
+    </pre>
