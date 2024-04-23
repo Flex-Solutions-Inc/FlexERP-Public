@@ -1,0 +1,20 @@
+<h2>POST /company/{company_id}/v1/api/sales_orders</h2>
+    <h3>Description</h3>
+    <p>Create a new sales order within a company. Provide sales order details including customer information, order amounts, and payment details.</p>
+    <h3>Request URL</h3>
+    <code>https://getflex.solutions/company/{company_id}/v1/api/sales_orders</code>
+    <h3>Request Body Example</h3>
+    <pre>
+{
+    "customer_id": 10,
+    "order_date": "2021-01-01T00:00:00",
+    "ship_date": "2021-01-05T00:00:00",
+    "status": "pending",
+    "total_amount": 500.00,
+    "currency": "USD",
+    "payment_method": "credit card",
+    "notes": "Urgent delivery"
+}
+    </pre>
+    <h3>Sample Response</h3>
+    <pre>Response: {"message": "Sales order created successfully", "order_id": 2}</pre>
