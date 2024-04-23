@@ -1,0 +1,20 @@
+ <h2>PUT /company/{company_id}/v1/api/sales_orders/{order_id}</h2>
+    <h3>Description</h3>
+    <p>Update existing sales order information by providing the company ID and order ID along with new data for the sales order.</p>
+    <h3>Request URL</h3>
+    <code>https://getflex.solutions/company/{company_id}/v1/api/sales_orders/{order_id}</code>
+    <h3>Request Body Example</h3>
+    <pre>
+{
+    "customer_id": 10,
+    "order_date": "2021-01-01T00:00:00",
+    "ship_date": "2021-01-10T00:00:00",
+    "status": "shipped",
+    "total_amount": 550.00,
+    "currency": "USD",
+    "payment_method": "paypal",
+    "notes": "Delivery updated"
+}
+    </pre>
+    <h3>Sample Response</h3>
+    <pre>Response: {"message": "Sales order updated successfully"}</pre>
