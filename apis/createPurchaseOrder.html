@@ -1,0 +1,21 @@
+ <h2>POST /company/{company_id}/v1/api/purchase_orders</h2>
+    <h3>Description</h3>
+    <p>Create a new purchase order for a specific company. This endpoint allows for specifying supplier details, order and expected delivery dates, and the total amount of the order.</p>
+    <h3>Request URL</h3>
+    <code>https://getflex.solutions/company/{company_id}/v1/api/purchase_orders</code>
+    <h3>Request Body Example</h3>
+    <pre>
+{
+    "supplier_id": 100,
+    "order_date": "2023-10-01T00:00:00Z",
+    "expected_delivery_date": "2023-10-15T00:00:00Z",
+    "total_amount": 2000.50
+}
+    </pre>
+    <h3>Sample Response</h3>
+    <pre>
+{
+    "message": "Purchase order created successfully",
+    "purchase_order_id": 123
+}
+    </pre>
